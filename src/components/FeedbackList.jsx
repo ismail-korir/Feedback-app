@@ -17,7 +17,7 @@ function FeedbackList() {
   return isLoading ? (
     <Spinner />
   ) : (
-    <div className="feedback-list">
+    <div className='feedback-list'>
       <AnimatePresence>
         {feedback.map((item) => (
           <motion.div
@@ -25,7 +25,8 @@ function FeedbackList() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            layout>
+            layout
+          >
             <FeedbackItem key={item.id} item={item} />
           </motion.div>
         ))}
